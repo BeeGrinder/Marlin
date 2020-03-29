@@ -104,13 +104,13 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0
+#define SERIAL_PORT -1
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 -1
+//#define SERIAL_PORT_2 -1
 
 /**
  * This setting determines the communication speed of the printer.
@@ -730,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 } //marlinDefault{ 80, 80, 4000, 500 }, i3v12{ 160, 160, 8000, 1800 }, pegasus{80.19,80.19,4000,90}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 90 } //marlinDefault{ 80, 80, 4000, 500 }, i3v12{ 160, 160, 8000, 1800 }, pegasus{80.19,80.19,4000,90}
 
 /**
  * Default Max Feed Rate (mm/s)
