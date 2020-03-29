@@ -653,7 +653,7 @@
 #define X_MAX_ENDSTOP_INVERTING true //false // Set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING true //false // Set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
+//#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
 
 /**
  * Stepper Drivers
@@ -829,7 +829,7 @@
  *
  * Enable this option for a probe connected to the Z Min endstop pin.
  */
-//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 /**
  * Z_MIN_PROBE_PIN
@@ -847,7 +847,7 @@
  *      - normally-open switches to 5V and D32.
  *
  */
-#define Z_MIN_PROBE_PIN P0_10
+//#define Z_MIN_PROBE_PIN P0_10
 
 /**
  * Probe Type
@@ -1002,7 +1002,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
-//#define Z_MIN_PROBE_REPEATABILITY_TEST
+#define Z_MIN_PROBE_REPEATABILITY_TEST
 
 // Before deploy/stow pause for user confirmation
 //#define PAUSE_BEFORE_DEPLOY_STOW
