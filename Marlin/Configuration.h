@@ -652,7 +652,7 @@
 #define X_MAX_ENDSTOP_INVERTING true //false // Set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING true //false // Set to true to invert the logic of the endstop.
-//#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
 
 /**
  * Stepper Drivers
@@ -730,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 90 } //marlinDefault{ 80, 80, 4000, 500 }, i3v12{ 160, 160, 8000, 1800 }, pegasus{80.19,80.19,4000,90}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 107 } //marlinDefault{ 80, 80, 4000, 500 }, i3v12{ 160, 160, 8000, 1800 }, pegasus{80.19,80.19,4000,90}
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -956,7 +956,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -35, 0, -2.845 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1092,8 +1092,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 270//200
-#define Y_BED_SIZE 270//200
+#define X_BED_SIZE 265//200
+#define Y_BED_SIZE 254//200
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1204,7 +1204,7 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
@@ -1364,7 +1364,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (100*60)//(50*60)
+#define HOMING_FEEDRATE_XY (60*60)//(50*60)
 #define HOMING_FEEDRATE_Z  (2*60)//(4*60)
 
 // Validate that endstops are triggered on homing moves
