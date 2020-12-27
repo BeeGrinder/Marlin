@@ -132,7 +132,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Pegasus (12/27/20)"
+#define CUSTOM_MACHINE_NAME "Pegasus (12/27/20)b"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -765,7 +765,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          3000//1000//3000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          800//1000//3000    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000//500//3000    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   3000//1000//3000    // X, Y, Z acceleration for travel (non printing) moves
 
